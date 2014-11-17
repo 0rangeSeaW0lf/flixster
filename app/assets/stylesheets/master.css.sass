@@ -1,0 +1,17 @@
+@import compass
+
+=fonts($weight)
+    font-family: "Helvetica Neue", Helvetica
+    font-weight: $weight
+
+.navbar
+    border-radius: 0
+    +fonts(200)
+    +box-shadow(0px 1px 3px #2a2a2a)
+    // background: url('assets/navbar.png')
+    // background: url(<%= image 'navbar.png'%>)
+    
+    
+.nav-inverse a.navbar-brand
+    +fonts(100)
+    color: white
