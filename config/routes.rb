@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  get 'lessons/show'
+
   devise_for :users
 
   # The priority is based upon order of creation: first created -> highest priority.
@@ -8,7 +10,7 @@ Rails.application.routes.draw do
   root 'static_pages#index'
   
   resources :courses, :only => [:index, :show]
-  
+  resources :lessons, :only => [:show]
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
   namespace :instructor do
