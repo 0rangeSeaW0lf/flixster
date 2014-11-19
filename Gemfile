@@ -57,3 +57,6 @@ gem 'carrierwave'
 
 #Use fog
 gem 'fog'
+
+#Use Simple Form
+gem 'simple_form'
