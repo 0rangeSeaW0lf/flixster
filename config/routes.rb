@@ -6,11 +6,15 @@ Rails.application.routes.draw do
 
   # You can have the root of your site routed with "root"
   root 'static_pages#index'
-
+  
+  resources :courses, :only => [:index, :show]
+  
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
   namespace :instructor do
-    resources :courses, :only => [:new, :create, :show]
+    resources :courses, :only => [:new, :create, :show] do
+      resources :sections, :only => [:new, :create]
+    end
   end
   
   # Example of named route that can be invoked with purchase_url(id: product.id)
