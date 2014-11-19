@@ -60,3 +60,6 @@ gem 'fog'
 
 #Use Simple Form
 gem 'simple_form'
+
+#Use MiniMagick
+gem 'mini_magick'
