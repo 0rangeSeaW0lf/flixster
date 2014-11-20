@@ -8,35 +8,9 @@
     <%= csrf_meta_tags %>
     
   </head>
-  <body>
-    <div id="wrap">
-      <nav class="navbar navbar-inverse" role="navigation">
-        <div class="container-fluid">
-          <!-- Brand and toggle get grouped for better mobile display -->
-          <div class="navbar-header">
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-              <span class="sr-only">Toggle navigation</span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-            </button>
-            <a class="navbar-brand" href="<%= root_path %>">Flixster</a>
-          </div>
-          <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-            <ul class="nav navbar-nav navbar-left">
-              <li><a href="<%= courses_path%>">See all Courses</a></li>
-            </ul>
-            <ul class="nav navbar-nav navbar-right">
-              <% if user_signed_in? %>
-                <li><a href="<%= destroy_user_session_path%>" data-method="delete">Sign Out</a></li>
-              <% else %>
-              <li><a href="<%= user_session_path %>">Sign In</a></li>
-              <li><a href="<%= new_user_registration_path %>">Sign Up</a></li>
-              <% end %>
-            </ul>
-          </div><!-- /.navbar-collapse -->
-        </div><!-- /.container-fluid -->
-      </nav>
+  <body class="site">
+    <div class="site-content">
+      <%= render :partial => "layouts/top" %>
       <% if notice.present? %>
         <p class="notice alert-info"><%= notice %></p>
       <% end %>
@@ -50,12 +24,13 @@
     
     <br class="clr" />
     
-    <div id="footer">
-      <footer class="container">
+    <footer>
+      <div class= "col-xs-10 col-xs-offset-1">
+        <br />
         <b>Teachers</b>
         <br />
         <%= link_to "Teach a Course", new_instructor_course_path %>
-      </footer>
-    </div>
+      </div>
+    </footer>
   </body>
 </html>

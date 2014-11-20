@@ -4,8 +4,9 @@
     <%= simple_form_for @lesson, :url => instructor_section_lessons_path(current_section) do |f| %>
         <%= f.input :title, label: "Title" %>
         <%= f.input :subtitle, label: "Subtitle" %>
+        <%= f.input :video, label: "Video" %>
         <br />
-        <%= f.submit "Add the lesson" %>
+        <%= f.submit "Add the lesson", :class => "btn btn-primary" %>
         <br /><br />
     <% end %>
 </div>
