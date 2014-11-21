@@ -66,3 +66,6 @@ gem 'mini_magick'
 
 #Use stripe for payment processing
 gem 'stripe'
+
+#Use Ranked Model
+gem 'ranked-model'
