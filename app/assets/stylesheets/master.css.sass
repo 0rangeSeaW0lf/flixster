@@ -17,14 +17,14 @@ h1, h2, h3, h4, h5, h6, .navbar
     border-radius: 0
     +fonts(200)
     +box-shadow(0px 1px 3px #2a2a2a)
-    background: url('navbar.png')
+    background: image-url('navbar.png')
 
 .navbar-inverse, a.navbar.brand
     +fonts(100)
     color: white
 
 .hero
-    background: url('hero.jpeg') no-repeat center center fixed
+    background: image-url('hero.jpeg') no-repeat center center fixed
     height: 370px
     +background-size(cover)
     +box-shadow(0px 3px 8px #2a2a2a)
@@ -79,12 +79,6 @@ footer
     a
         color: white
         font-weight: 100
-
-@media(max-width: 767px)
-    margin-left: -20px
-    margin-right: -20px
-    padding-left: 20px
-    padding-right: 20px
     
 .aligner
     display: flex
@@ -93,5 +87,20 @@ footer
     
 .aligner-item
     max-width: 50%
-
     
+.lesson
+    background-color: black
+    margin-top: 10px
+    height: 130px
+    a
+        color: white
+        +fonts(100)
+        font-size: 15px
+    a b
+        font-weight: 100
+        font-size: 25px
+    
+.section
+    border: 1px solid
+    border-color: #e4e4e4 #bebebd #bebebd #e4e4e4
+    padding: 20px
