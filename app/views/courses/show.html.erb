@@ -8,6 +8,14 @@
             <%= number_to_currency @course.cost, :unit=>'€' %>
         </span>
     </div>
+    
+    <br /><br />
+    <% if current_user && current_user.enrolled_in?(@course) %>
+        <h3 class="label label-info">You're Already Enrolled!</h3>
+    <% else %>
+        <%= link_to "Enroll", course_enrollments_path(@course), :class => "btn btn-primary", :method => :post %>
+    <% end %>
+    
     <div class="col-sm-8 col-xs-12">
         <%= @course.description %>
     </div>

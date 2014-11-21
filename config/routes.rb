@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  get 'enrollments/create'
+
   get 'lessons/show'
 
   devise_for :users
@@ -9,7 +11,9 @@ Rails.application.routes.draw do
   # You can have the root of your site routed with "root"
   root 'static_pages#index'
   
-  resources :courses, :only => [:index, :show]
+  resources :courses, :only => [:index, :show] do
+    resources :enrollments, :only => :create
+  end
   resources :lessons, :only => [:show]
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
