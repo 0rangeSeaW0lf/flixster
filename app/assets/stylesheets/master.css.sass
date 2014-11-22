@@ -1,6 +1,7 @@
 @import compass
 
 $footer-height: 100px
+$border-col: #e4e4e4 #bebebd #bebebd #e4e4e4
 
 =fonts($weight)
     font-family: "Helvetica Neue", Helvetica
@@ -12,6 +13,9 @@ body
 
 h1, h2, h3, h4, h5, h6, .navbar
     margin: 0
+
+ul
+    list-style-type: none
 
 .navbar
     border-radius: 0
@@ -46,7 +50,7 @@ h1, h2, h3, h4, h5, h6, .navbar
     +box-shadow(1px 1px 2px 0 #d0d0d0)
     background: #fff
     border: 1px solid #ccc
-    border-color: #e4e4e4 #bebebd #bebebd #e4e4e4
+    border-color: $border-col
     padding: 10px
     h1, h2
         margin: 10px
@@ -102,5 +106,43 @@ footer
     
 .section
     border: 1px solid
-    border-color: #e4e4e4 #bebebd #bebebd #e4e4e4
+    border-color: $border-col
     padding: 20px
+
+.section-li
+    border: 1px solid
+    border-color: $border-col
+    padding: 20px
+    margin: 20px
+
+.header
+    font-size: 25px
+    
+ul .header .glyphicon
+    font-size: 20
+
+.lessons
+    li
+        background: black
+        color: white
+        margin: 10px
+        +fonts(100)
+        padding: 8px
+        font-size: 15px
+        b
+            font-size: 25px
+            font-weight: 100
+        p
+            margin 0
+        
+.vlm
+    position: relative
+    top: 50%
+    -webkit-transform: translateY(-50%)
+    -ms-transform: translateY(-50%)
+    transform: translateY(-50%)
+
+.vlmp
+    -webkit-transform-style: preserve-3d
+    -moz-transform-style: preserve-3d
+    transform-style: preserve-3d
