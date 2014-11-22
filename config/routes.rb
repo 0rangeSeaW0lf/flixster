@@ -18,6 +18,8 @@ Rails.application.routes.draw do
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
   namespace :instructor do
+    resources :lessons, :only => [:update]
+    resources :sections, :only => [:update]
     resources :sections, :only => [] do
       resources :lessons, :only => [:new, :create]
     end
