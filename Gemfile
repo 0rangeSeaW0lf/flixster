@@ -6,13 +6,11 @@ gem 'rails', '>= 4.1.7'
 # Use postgresql as the database for Active Record
 gem 'pg'
 # Use SCSS for stylesheets
-gem 'sass', '~> 3.2.19'
-gem 'sprockets'
-gem 'sprockets-rails'
-
+gem 'sass', "~> 3.4.8"
+# Use Sprockets
+gem "sprockets", ">= 2.8.0"
 # Use Compass
-gem 'compass', '~> 0.12.7'
-gem 'compass-rails', '~> 2.0.0'
+gem 'compass'
 # Use Bootstrap
 gem 'bootstrap-sass'
 # Use Autoprefixer
