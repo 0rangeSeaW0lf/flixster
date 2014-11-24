@@ -2,6 +2,10 @@ Rails.application.routes.draw do
   get 'enrollments/create'
 
   get 'lessons/show'
+  
+  get 'privacy', :to => "static_pages#privacy"
+  get 'team', :to => "static_pages#team"
+  get 'careers', :to => "static_pages#careers"
 
   devise_for :users
   resource :dashboard, :only => [ :show ]

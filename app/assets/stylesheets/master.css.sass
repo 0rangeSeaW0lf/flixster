@@ -79,10 +79,12 @@ footer
     height: $footer-height
     color: white
     background-color: rgba(36,32,33,0.9)
-    font-family: "Helvetica Neue",Helvetica
+    +fonts(100)
     a
         color: white
         font-weight: 100
+    a:hover
+        color: white
     
 .aligner
     display: flex
@@ -146,3 +148,11 @@ ul .header .glyphicon
     -webkit-transform-style: preserve-3d
     -moz-transform-style: preserve-3d
     transform-style: preserve-3d
+    
+.social-button
+    width: 32px
+    margin: 4px
+    
+.social 
+    a:hover
+        text-decoration:none

@@ -30,11 +30,45 @@
     <br class="clr" />
     
     <footer>
-      <div class= "col-xs-10 col-xs-offset-1">
-        <br />
-        <b>Teachers</b>
-        <br />
-        <%= link_to "Teach a Course", new_instructor_course_path %>
+      <div class="container">
+        <div class= "col-xs-12 col-sm-3">
+          <br />
+          <b>Teachers</b>
+          <br />
+          <%= link_to "Teach a Course", new_instructor_course_path %>
+          <br />
+          <%= link_to "My Dashboard", dashboard_path %>
+        </div>
+        <div class= "col-xs-12 col-sm-3">
+          <br />
+          <b>About</b>
+          <br />
+          <%= link_to "Team", team_path %>
+          <br />
+          <%= link_to "Careers", careers_path %>
+          <br />
+          <%= link_to "Private Policy", privacy_path %>
+        </div>
+        <div class= "col-xs-12 col-sm-3">
+          <br />
+          <b>Contact</b>
+          <br />
+          <a href="mailto:jose.moreno@reyesic.net">jose.moreno@reyesic.net</a>
+          <br />
+          95444 Bayreuth, Germany
+        </div>
+        <div class= "col-xs-12 col-sm-3 social">
+          <br />
+          <b>Social</b>
+          <br />
+          <%= link_to "https://github.com/jmorenor", :target => "_blank" do %>
+            <%= image_tag 'github.png', :class => "social-button" %>
+          <% end %>
+          <%= image_tag 'facebook.png', :class => "social-button" %>
+          <%= link_to "https://twitter.com/jmorenor", :target => "_blank" do %>
+            <%= image_tag 'twitter.png', :class => "social-button" %>
+          <% end %>
+        </div>
       </div>
     </footer>
   </body>
