@@ -244,8 +244,8 @@ DEPENDENCIES
   autoprefixer-rails
   bootstrap-sass
   carrierwave
-  coffee-rails (>= 4.0.0)
-  compass-rails
+  coffee-rails (~> 4.0.0)
+  compass-rails (~> 2.0.0)
   devise
   figaro
   fog

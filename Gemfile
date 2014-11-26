@@ -7,8 +7,9 @@ gem 'rails', '>= 4.1.7'
 gem 'pg'
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 5.0.0.beta1'
-# # Use Compass
-gem 'compass-rails'
+# Use Compass
+gem 'compass-rails', '~> 2.0.0'
+>>>>>>> Tweaks
 # Use Bootstrap
 gem 'bootstrap-sass'
 # Use Autoprefixer
