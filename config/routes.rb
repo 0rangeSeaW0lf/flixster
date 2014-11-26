@@ -24,8 +24,7 @@ Rails.application.routes.draw do
   #   get 'products/:id' => 'catalog#view'
   namespace :instructor do
     resources :lessons, :only => [:update]
-    resources :sections, :only => [:update]
-    resources :sections, :only => [] do
+    resources :sections, :only => [:update] do
       resources :lessons, :only => [:create]
     end
     resources :courses, :only => [:new, :create, :show] do
