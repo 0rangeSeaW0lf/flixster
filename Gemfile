@@ -9,7 +9,6 @@ gem 'pg'
 gem 'sass-rails', '~> 5.0.0.beta1'
 # Use Compass
 gem 'compass-rails', '~> 2.0.0'
->>>>>>> Tweaks
 # Use Bootstrap
 gem 'bootstrap-sass'
 # Use Autoprefixer
