@@ -6,11 +6,9 @@ gem 'rails', '>= 4.1.7'
 # Use postgresql as the database for Active Record
 gem 'pg'
 # Use SCSS for stylesheets
-gem 'sass', "~> 3.4.8"
-# Use Sprockets
-gem "sprockets", ">= 2.8.0"
-# Use Compass
-gem 'compass'
+gem 'sass-rails', '~> 5.0.0.beta1'
+# # Use Compass
+gem 'compass-rails'
 # Use Bootstrap
 gem 'bootstrap-sass'
 # Use Autoprefixer
@@ -18,7 +16,7 @@ gem 'autoprefixer-rails'
 # Use Uglifier as compressor for JavaScript assets
 gem 'uglifier', '>= 1.3.0'
 # Use CoffeeScript for .js.coffee assets and views
-gem 'coffee-rails', '~> 4.0.0'
+gem 'coffee-rails', '>= 4.0.0'
 # See https://github.com/sstephenson/execjs#readme for more supported runtimes
 # gem 'therubyracer',  platforms: :ruby
 
